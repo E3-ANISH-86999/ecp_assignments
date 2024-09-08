@@ -4,15 +4,22 @@
 
 int main(){
 
-	int a=3,b=4,c=5,s,area,x;
+	int a,b,c,perimeter,s,x;
+	double area;
+	
+	printf("Enter sides of triangle :\n");
 
-	s = a + b + c;
+	scanf("%d%d%d",&a,&b,&c);
 
+	perimeter = a + b + c;
+	
+	s = perimeter / 2;
+	
 	x = s*(s-a)*(s-b)*(s-c) ;
 
-	area = sqrt(double(x)) ;
+	area = sqrt(x) ;
 
-	printf("Perimeter of triangle = %d\nArea of triangle = %d\n",s,area);
+	printf("Perimeter of triangle = %d\nArea of triangle = %.2f\n",perimeter,area);
 
 
 
